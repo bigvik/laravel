@@ -1,0 +1,704 @@
+#digi-feedback.digi-feedback {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 24px rgba(128, 149, 255, .16);
+    padding: 24px;
+    margin: 20px 0;
+    height: 92px
+}
+
+#digi-feedback .digi-feedback__logo {
+    display: none;
+    width: 87px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Frame.svg)
+}
+
+#digi-feedback .digi-feedback__text {
+    color: #0d0943;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-right: 24px
+}
+
+#digi-feedback .digi-feedback__emoji-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-right: 36px
+}
+
+#digi-feedback .digi-feedback__emoji-item {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    padding: 3px
+}
+
+#digi-feedback .digi-feedback__emoji-item:not(:last-child) {
+    margin-right: 8px
+}
+
+#digi-feedback .digi-feedback__emoji-item:hover {
+    border-color: #6e85f5
+}
+
+#digi-feedback .digi-feedback__emoji-item:hover .digi-feedback__emoji-tooltip {
+    display: -webkit-flex;
+    display: flex
+}
+
+#digi-feedback .digi-feedback__emoji-tooltip {
+    position: absolute;
+    left: -14px;
+    top: -40px;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 1px;
+    padding: 6px;
+    display: none;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 70px;
+    z-index: 1
+}
+
+#digi-feedback .digi-feedback__emoji-tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 10px;
+    height: 9px;
+    border: 5px solid transparent;
+    border-top: 9px solid rgba(0, 0, 0, .6);
+    box-sizing: border-box
+}
+
+#digi-feedback .digi-feedback__emoji-tooltip-text {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500
+}
+
+#digi-feedback .digi-feedback__emoji-button {
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto
+}
+
+#digi-feedback .digi-feedback__emoji-button.terrible {
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Property%201=1.svg)
+}
+
+#digi-feedback .digi-feedback__emoji-button.bad {
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Property%201=2.svg)
+}
+
+#digi-feedback .digi-feedback__emoji-button.average {
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Property%201=3.svg)
+}
+
+#digi-feedback .digi-feedback__emoji-button.good {
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Property%201=4.svg)
+}
+
+#digi-feedback .digi-feedback__emoji-button.excellent {
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Group%202.svg)
+}
+
+#digi-feedback .digi-feedback__heart {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 60px;
+    height: 60px
+}
+
+#digi-feedback .digi-feedback__heart-icon {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/mdi_heart.svg)
+}
+
+#digi-feedback .digi-feedback__button-wrapper {
+    position: absolute;
+    right: 24px
+}
+
+#digi-feedback .digi-feedback__close-button {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto;
+    background-image: url(https://cdn.diginetica.net/digi-emodzi/Vector.svg)
+}
+
+#digi-shield.digi_mobile #digi-feedback.digi-feedback {
+    margin: 16px 0;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: unset
+}
+
+#digi-shield.digi_mobile #digi-feedback .digi-feedback__logo {
+    margin-top: 16px;
+    -webkit-order: 3;
+    order: 3
+}
+
+#digi-shield.digi_mobile #digi-feedback .digi-feedback__text {
+    max-width: 246px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-order: 1;
+    order: 1;
+    margin-right: 0
+}
+
+#digi-shield.digi_mobile #digi-feedback .digi-feedback__emoji-list {
+    margin-top: 16px;
+    margin-right: 0;
+    width: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-order: 2;
+    order: 2
+}
+
+#digi-shield.digi_mobile #digi-feedback .digi-feedback__emoji-item:not(:last-child) {
+    margin-right: 16px
+}
+
+#digi-shield.digi_mobile #digi-feedback .digi-feedback__heart {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px
+}
+
+#digi-shield.digi_mobile #digi-feedback .digi-feedback__button-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.bd-card-products-load[data-v-ae081948] {
+    min-height: 60px;
+    overflow: visible;
+    position: relative
+}
+
+#carrotquest-messenger-collapsed-container {
+    position: fixed !important;
+    z-index: 2147483000 !important;
+    max-width: 90% !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_top {
+    top: 0 !important;
+    right: 0 !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_bottom {
+    right: 0 !important;
+    bottom: 0 !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-left_top {
+    top: 0 !important;
+    left: 0 !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-left_bottom {
+    bottom: 0 !important;
+    left: 0 !important
+}
+
+#carrotquest-messenger-collapsed-container #chat-container {
+    display: flex !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_bottom #chat-container,
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_top #chat-container {
+    flex-direction: row-reverse !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_bottom #chat-container,
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-left_bottom #chat-container {
+    align-items: flex-end !important
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_top #chat-container,
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-left_top #chat-container {
+    align-items: flex-start !important
+}
+
+#carrotquest-messenger-collapsed-container #icon-container {
+    flex-shrink: 0;
+    width: 80px !important;
+    min-width: 80px !important;
+    height: 80px !important;
+    z-index: 1
+}
+
+#carrotquest-messenger-collapsed-container #tooltip-container {
+    position: relative;
+    flex-shrink: 1;
+    max-width: 300px;
+    height: 146px;
+    max-height: 146px;
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_bottom #tooltip-container,
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-right_top #tooltip-container {
+    margin-right: -20px
+}
+
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-left_bottom #tooltip-container,
+#carrotquest-messenger-collapsed-container.carrotquest-messenger-left_top #tooltip-container {
+    margin-left: -20px
+}
+
+#carrotquest-messenger-collapsed-container #carrot-messenger-tooltip,
+#carrot-messenger-collapsed-frame {
+    width: 100% !important;
+    height: 100% !important;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+iframe {
+    color-scheme: auto
+}
+
+.feature_start-screen.carrot-messenger-frame-small-chat {
+    border-radius: 15px !important
+}
+
+.carrotquest-css-reset *,
+.carrotquest-css-reset-frame * {
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.carrotquest-css-reset iframe,
+.carrotquest-css-reset div,
+.carrotquest-css-reset span,
+.carrotquest-css-reset a,
+.carrotquest-css-reset button,
+.carrotquest-css-reset-frame iframe,
+.carrotquest-css-reset-frame div,
+.carrotquest-css-reset-frame span,
+.carrotquest-css-reset-frame a,
+.carrotquest-css-reset-frame button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+.carrotquest-css-reset iframe,
+.carrotquest-css-reset-frame iframe {
+    max-height: none;
+    max-width: none
+}
+
+.carrotquest-message-mobil-noscroll {
+    overflow: hidden !important
+}
+
+.carrot-popup-frame {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 2147483000 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    animation: carrotquest-fadein .25s !important
+}
+
+@keyframes carrotquest-fadein {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.carrot-messenger-frame-container {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 2147483000 !important;
+    width: 370px !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    box-shadow: 0 8px 18px #0003, 0 0 2px #0000000d !important
+}
+
+.carrot-messenger-frame-container.carrotquest-messenger-line-left {
+    left: 0 !important
+}
+
+.carrot-messenger-frame-container.carrotquest-messenger-line-right {
+    right: 0 !important
+}
+
+.carrot-messenger-frame-small-chat.carrot-messenger-frame-container.carrotquest-messenger-line-right {
+    right: 27px !important
+}
+
+.carrot-messenger-frame-small-chat.carrot-messenger-frame-container.carrotquest-messenger-line-left {
+    left: 27px !important
+}
+
+.carrot-messenger-frame-container.data-truncate-visibility {
+    box-shadow: none !important
+}
+
+.carrot-messenger-frame,
+.carrot-notification-frame,
+.carrot-popup-small-frame {
+    width: 100% !important;
+    height: 100% !important
+}
+
+#carrot-notification-frame {
+    width: 100%
+}
+
+.carrotquest-messenger-mobile-chat {
+    height: 100% !important
+}
+
+.carrot-messenger-frame-small-chat {
+    top: auto !important;
+    bottom: 27px !important;
+    height: calc(100% - 120px) !important;
+    min-height: 250px !important;
+    max-height: 620px !important;
+    border-radius: 10px !important
+}
+
+.carrot-messenger-frame-small-chat .carrot-messenger-frame {
+    height: 100% !important;
+    max-height: 100% !important
+}
+
+.carrot-messenger-frame-mobile-chat,
+.carrot-messenger-frame-mobile-chat .carrot-messenger-frame {
+    height: 100% !important
+}
+
+.carrot-messenger-frame-small-chat .carrotquest-messenger-line-right {
+    right: 50px !important
+}
+
+.carrot-messenger-frame-small-chat .carrotquest-messenger-line-left {
+    left: 50px !important
+}
+
+@media only screen and (max-device-width: 667px),
+screen and (max-width: 450px) {
+    #carrot-messenger-frame {
+        left: 0 !important;
+        width: 100% !important
+    }
+
+    .carrot-messenger-frame-container {
+        inset: 0 !important;
+        z-index: 2147483001 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        border-radius: 0 !important
+    }
+
+    .carrot-messenger-frame-container.data-truncate-visibility {
+        margin-top: 0 !important
+    }
+
+    div.carrot-notification-container {
+        right: 0 !important
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .carrot-messenger-frame-container.data-truncate-visibility {
+        min-height: 411px !important;
+        margin-top: 0 !important
+    }
+}
+
+.carrotquest-messenger-line-anim {
+    animation-name: carrotquest-messenger-line-anim-right !important;
+    animation-duration: .15s !important;
+    animation-timing-function: cubic-bezier(0, 0, .2, 1) !important
+}
+
+@keyframes carrotquest-messenger-line-anim-right {
+    0% {
+        opacity: 0;
+        transform: scale(.6) translate(124px, 320px)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translate(0)
+    }
+}
+
+.carrotquest-messenger-line-left {
+    animation-name: carrotquest-messenger-line-anim-left !important
+}
+
+@keyframes carrotquest-messenger-line-anim-left {
+    0% {
+        opacity: 0;
+        transform: scale(.6) translate(-124px, 320px)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translate(0)
+    }
+}
+
+@keyframes carrotquest-move-anim-r {
+    0% {
+        opacity: 0;
+        right: -370px
+    }
+}
+
+@keyframes carrotquest-move-anim-l {
+    0% {
+        opacity: 0;
+        left: -370px
+    }
+}
+
+#carrot-frame-bumperCookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147482999 !important;
+    width: 100%;
+    box-shadow: 0 1px 8px #0000001f, 0 0 2px #00000014
+}
+
+#carrot-frame-bumperCookies.carrot-frame-bumperCookies-agreed {
+    transform: translateY(100%) !important;
+    transition: all cubic-bezier(.4, 0, 1, 1) .2s !important
+}
+
+.carrot-notification-container {
+    position: fixed !important;
+    z-index: 2147483000 !important;
+    width: 330px;
+    min-width: 330px !important;
+    max-height: 70vh !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity .4s, transform .4s !important
+}
+
+.carrot-notification-container.hidden {
+    opacity: 0 !important;
+    transform: translateY(90px) !important
+}
+
+.carrot-messenger-embedded-frame-container {
+    height: 100% !important;
+    width: 100% !important;
+    position: relative
+}
+
+.carrot-messenger-embedded-frame-container .wrapper-calendly,
+.carrot-messenger-frame-container .wrapper-calendly {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.carrot-messenger-embedded-frame-container .wrapper-calendly #widget-header,
+.carrot-messenger-frame-container .wrapper-calendly #widget-header {
+    height: 50px
+}
+
+.carrot-messenger-embedded-frame-container .wrapper-calendly #back-to-chat,
+.carrot-messenger-frame-container .wrapper-calendly #back-to-chat {
+    padding: 15px;
+    cursor: pointer
+}
+
+.carrot-messenger-embedded-frame-container .wrapper-calendly .calendly-inline-widget,
+.carrot-messenger-frame-container .wrapper-calendly .calendly-inline-widget {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px)
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__toolFrame--2uksu {
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 2147483646 !important;
+    border: none !important;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2147483646;
+    border: none;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh .web-clipper-loading {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px 0px;
+    background: white;
+    width: 324px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh .web-clipper-loading .line {
+    animation: src-service-contentScript-browser-contentScript-contentScript__expand--31ZFO 1s ease-in-out infinite;
+    border-radius: 10px;
+    display: inline-block;
+    transform-origin: center center;
+    margin: 0 3px;
+    width: 1px;
+    height: 25px;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh .web-clipper-loading .line:nth-child(1) {
+    background: #27ae60;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh .web-clipper-loading .line:nth-child(2) {
+    animation-delay: 180ms;
+    background: #f1c40f;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh .web-clipper-loading .line:nth-child(3) {
+    animation-delay: 360ms;
+    background: #e67e22;
+}
+
+.src-service-contentScript-browser-contentScript-contentScript__web-clipper-loading-box--fHTwh .web-clipper-loading .line:nth-child(4) {
+    animation-delay: 540ms;
+    background: #2980b9;
+}
+
+@keyframes src-service-contentScript-browser-contentScript-contentScript__expand--31ZFO {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(2);
+    }
+}
+
+#index_crossLine__2WHMH {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2147483645;
+}
+
+#index_crossLine__2WHMH::before {
+    border: none;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2147483645;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    left: -100%;
+    top: -100%;
+}
+
+#index_crossLine__2WHMH::after {
+    border: none;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2147483645;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    left: 0;
+    top: 0;
+}
+
+#index_selectArea__2G3Z3 {
+    border: 1px solid red;
+    position: fixed;
+    z-index: 2147483645;
+}
+
+.index_highlightSelector__-qiHd {
+    background-color: #fafafa !important;
+    outline: 3px dashed #1976d2 !important;
+    opacity: 0.8 !important;
+    cursor: pointer !important;
+    transition: opacity 0.5s ease !important;
+}
+
+#carrotquest-messenger-collapsed-container {
+    margin-bottom: 90px !important;
+}
+
+.carrot-notification-container {
+    bottom: 160px !important;
+}
+
+#carrotquest-messenger-collapsed-container {
+    margin-right: 90px !important;
+}
+
+.carrot-notification-container {
+    right: 80px !important;
+}
